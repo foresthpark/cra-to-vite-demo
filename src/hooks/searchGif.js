@@ -4,7 +4,7 @@ import { useQuery } from "react-query";
 const fetchSearchGif = async (search) => {
   const fetchData = await axios.get("https://api.giphy.com/v1/gifs/search", {
     params: {
-      api_key: process.env.REACT_APP_GIPHY_API_KEY,
+      api_key: import.meta.env.VITE_GIPHY_API_KEY,
       q: search,
     },
   });

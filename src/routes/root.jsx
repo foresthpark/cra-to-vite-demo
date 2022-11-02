@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Outlet } from "react-router-dom";
+import React from "react";
 
 const navigation = [
   { name: "Random GIF", href: "/random", current: false },

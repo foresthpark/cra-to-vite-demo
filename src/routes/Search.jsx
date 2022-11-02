@@ -8,7 +8,6 @@ export default function Search() {
   const [searchTerm, setSearchTerm] = React.useState("");
   const { handleSubmit, register, reset } = useForm();
   const { data, isLoading, isError } = useSearchGif(searchTerm);
-  console.log("🚀 ~ file: Search.js ~ line 9 ~ Search ~ data", data);
 
   const onSubmit = async (data) => {
     setSearchTerm(data.search);
